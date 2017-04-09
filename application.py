@@ -28,7 +28,7 @@ try:
     cursor = conn.cursor()
 except Exception as e:
     print("Unable to connect to Database.")
-    print({0}.format(e))
+    print("{0}".format(e))
     sys.exit(1)
 
 # Fetch contents of Login Data
@@ -39,7 +39,7 @@ try:
         password_value
         FROM logins''')
 except Exception as e:
-    print({0}.format(e))
+    print("{0}".format(e))
     sys.exit(1)
 
 data = cursor.fetchall()
@@ -59,7 +59,7 @@ with open('export.txt', 'w') as f:
                     None,
                     0)[1].decode("utf-8")
             except Exception as e:
-                print({0}.format(e))
+                print("{0}".format(e))
                 pass
             if password:
                 f.write(
