@@ -1,3 +1,3 @@
-chrome-decrypter
-================
-Python script to decrypt saved Chrome usernames and passwords on windows
+# Chrome saved password decrypter
+
+Fetches and decrypts Google Chrome's saved usernames and passwords on Windows
